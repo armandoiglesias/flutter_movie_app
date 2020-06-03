@@ -16,6 +16,9 @@ class Peliculas{
 }
 
 class Pelicula {
+
+  String uniqueId;
+
   double popularity;
   int voteCount;
   bool video;
@@ -66,6 +69,14 @@ class Pelicula {
 
     if ( posterPath != null)
       return "https://image.tmdb.org/t/p/w500/$posterPath";
+
+    return "https://pbs.twimg.com/profile_images/1107441480145227779/q6qOw0yj_400x400.jpg";
+  }
+
+  geBackgroundImg(){
+
+    if ( backdropPath != null)
+      return "https://image.tmdb.org/t/p/w500/$backdropPath";
 
     return "https://pbs.twimg.com/profile_images/1107441480145227779/q6qOw0yj_400x400.jpg";
   }
